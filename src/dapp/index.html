@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FlightSurety</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" href="#">
+</head>
+<script>
+  /*function Flight() {
+    var list = document.getElementById("List");
+    document.getElementById("flight").value = list.options[list.selectedIndex].text;
+    }
+    function Departure() {
+        var dlist = document.getElementById("DList");
+        document.getElementById("departure").value = dlist.options[dlist.selectedIndex].text;
+        }*/
+    </script>
+ 
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">FlightSurety</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <main class="container">
+
+        <div id="display-wrapper" class="top-20">           
+        </div>
+        <div class="row top-20">
+            <label class="form"><b>Airline:</b></label><input type="text" id="airline-address" placeholder = "Airline Address"><input type="text" id="airline-name" placeholder= "Airline Name"><btn class="btn btn-primary" id="register-airline">Register Airline</btn>  <btn class="btn btn-primary" id="isAirlineRegistered" style="margin-left: 10px;">isAirlineRegistered</btn><btn class="btn btn-primary" id="vote-airline" style="margin-left: 10px;">Vote</btn>
+        </div>
+        </div>
+        <div class="row top-20">
+            <label class="form"><b>Fund Airline:</b></label><input type="text" id="airline-fund-address" placeholder = "Airline Address"><input type="text" id="airline-funds" placeholder= "10 ether"><btn class="btn btn-primary" id="fund-airline">Fund Airline</btn>  <btn class="btn btn-primary" id="isAirlineFunded" style="margin-left: 10px;">isAirlineFunded</btn>
+        </div>
+        <!-- <div class="row top-20">
+            <label class="form">Select Flight</label> <input type="text" id="flight-number"> <btn class="btn btn-primary" id="submit-oracle">Submit to Oracles</btn>
+        </div> -->
+        <div class="row top-20">
+        
+            <!-- <b> Select Flights</b>
+            <select id = "List" onchange = "Flight()" style="margin-left: 10px;">
+            <option> ---Choose Flight--- </option>
+            <option>F1000</option>
+            <option> F1001 </option>
+            <option> F1002 </option>
+            <option> F1003</option>
+            <option> F1004</option>
+            </select>
+            <b> Select Departure</b>
+            <select id = "DList" onchange = "Departure()" >
+            <option> ---Choose Departure--- </option>
+            <option>San Francisco</option>
+            <option>Orlando</option>
+            <option>New York</option>
+            <option>Phoenix</option>
+            <option>Detroit</option>
+            </select> -->
+            <div class="row top-20">
+            <b>Flight: </b>
+            <input type = "text" id = "flight" placeholder = "flight">             
+            <input type = "text" id = "departure" placeholder = "departure">            
+           <input type="text" id="airline" placeholder = "Airline Address">             
+           <input type="text" id="timestamp" placeholder = "timestamp">
+            <button class="btn btn-primary" id="register-flight">Register Flight</button>
+            </div>
+            <div class="row top-20">
+             <b>Insurance: </b>
+                    <input type="text" id="insurance" placeholder = "less than 1 eth">eth
+            <button class="btn btn-primary" id="buy-insurance">Purchase</button>
+             <b>Fetch Flight Status: </b>
+            <btn class="btn btn-primary" id="submit-oracle" style="margin-left: 10px;">Submit to Oracles</btn>
+             <b>Withdraw Credits: </b>
+            <btn class="btn btn-primary" id="withdraw-credits" style="margin-left: 10px;">Withdraw Credits</btn>
+            </div>
+           
+        </div>
+        
+
+        <div id="display-wrapper-register" class="top-20">           
+        </div>
+    </main>
+
+</body>
+
+</html>
